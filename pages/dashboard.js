@@ -37,7 +37,12 @@ import RightColumn from "@/components/RightColumn";
 
 export default function Dashboard() {
   return (
-    <Flex h="100vh" flexDir="row" overflow="hidden" maxW="2000px">
+    <Flex
+      h="100vh"
+      flexDir={{ base: "column", lg: "row" }}
+      overflow="hidden"
+      maxW="2000px"
+    >
       <LeftColumn />
       <MidColumn />
       <RightColumn />
