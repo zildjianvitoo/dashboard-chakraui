@@ -15,6 +15,14 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 export default function DashboardTable() {
   const [isHidden, setHidden] = useState(true);
 
+  const handleHidden = () => {
+    if (isHidden === true) {
+      setHidden(false);
+    } else {
+      setHidden(true);
+    }
+  };
+
   return (
     <Flex flexDir="column">
       <Flex overflow="auto">
@@ -60,7 +68,7 @@ export default function DashboardTable() {
         <Divider />
         <IconButton
           icon={isHidden ? <FiChevronDown /> : <FiChevronUp />}
-          onClick={() => setHidden(isHidden ? false : true)}
+          onClick={handleHidden}
         />
         <Divider />
       </Flex>

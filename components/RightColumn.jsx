@@ -164,7 +164,11 @@ export default function RightColumn() {
         </FormLabel>
         <InputGroup>
           <InputLeftElement pointerEvents="none" children={<FiCreditCard />} />
-          <Input id="cardNumber" placeholder="xxxx xxxx xxxx xxxx" />
+          <Input
+            type="number"
+            id="cardNumber"
+            placeholder="xxxx xxxx xxxx xxxx"
+          />
         </InputGroup>
       </Flex>
       <Flex mt="4" flexDir="column">
@@ -175,24 +179,21 @@ export default function RightColumn() {
         </FormLabel>
         <InputGroup>
           <InputLeftElement pointerEvents="none" children={<FiDollarSign />} />
-          <Input id="sum" placeholder="$999.00" />
+          <Input type="number" id="sum" placeholder="$999.00" />
         </InputGroup>
       </Flex>
-      <Box>
-        <Button
-          color="white"
-          bgColor="black"
-          mt="5"
-          p="7"
-          borderRadius="xl"
-          _active={{ color: "black" }}
-          w="full"
-          _hover={{ color: "black", bgColor: "white" }}
-          _focus={{ border: "3px", borderColor: "blue" }}
-        >
-          Send money
-        </Button>
-      </Box>
+
+      <Button
+        color="white"
+        bgColor="black"
+        mt="5"
+        p="7"
+        borderRadius="xl"
+        w="full"
+        _hover={{ color: "black", bgColor: "white" }}
+      >
+        Send money
+      </Button>
     </Flex>
   );
 }
