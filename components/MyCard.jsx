@@ -4,7 +4,15 @@ import { FiCreditCard } from "react-icons/fi";
 
 export default function MyCard({ bgGradient, balance, cardNumber, validThru }) {
   return (
-    <Box mt="4" p="4" bgGradient={bgGradient} borderRadius="3xl" color="white">
+    <Box
+      mt="4"
+      p="4"
+      bgGradient={bgGradient}
+      borderRadius="3xl"
+      color="white"
+      alignSelf="center"
+      minW={{ base: "400px", lg: "full" }}
+    >
       <Flex justifyContent="space-between" align="center">
         <Text color="gray.300">Current Balance</Text>
         <Flex justify="center" align="center" columnGap="2">

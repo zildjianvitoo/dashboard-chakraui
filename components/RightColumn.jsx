@@ -34,8 +34,8 @@ export default function RightColumn() {
   return (
     <Flex
       flexDir="column"
-      w="30%"
-      h="100vh"
+      w={["100%", "100%", "100%", "35%", "35%"]}
+      h={["100%", "100%", "100%", "100vh"]}
       bgColor="#F5F5F5"
       p="3%"
       overflow="auto"
@@ -79,7 +79,11 @@ export default function RightColumn() {
           2
         </Flex>
       </Flex>
-      <Heading mt="4" letterSpacing="tight">
+      <Heading
+        mt="4"
+        letterSpacing="tight"
+        textAlign={{ base: "center", lg: "left" }}
+      >
         My Cards
       </Heading>
       {value === 1 && (

@@ -4,20 +4,41 @@ import { FiHome, FiPieChart, FiDollarSign, FiBox } from "react-icons/fi";
 
 export default function LeftColumn() {
   return (
-    <Flex w="15%" flexDir="column" backgroundColor="#020202" color="#fff">
-      <Flex flexDir="column" justifyContent="space-between" height="100vh">
-        <Flex as="nav" flexDir="column">
+    <Flex
+      w={{ base: "100%", lg: "15%" }}
+      flexDir="column"
+      backgroundColor="#020202"
+      color="#fff"
+    >
+      <Flex
+        flexDir={"column"}
+        justifyContent="space-between"
+        height={{ base: null, lg: "100vh" }}
+      >
+        <Flex as="nav" flexDir={"column"}>
           <Heading
-            mt={50}
-            mb={100}
+            mt={{ base: "10", lg: "50" }}
+            mb={[0, 30, 30, 100]}
             fontSize="4xl"
             letterSpacing="tight"
             alignSelf="center"
           >
             Vito.
           </Heading>
-          <Flex flexDir="column" alignItems="center" justifyContent="center">
-            <Flex fontSize="large" flexDir="column" rowGap={6}>
+          <Flex
+            flexDir="column"
+            alignItems="center"
+            justifyContent="center"
+            mt={{ base: "5" }}
+          >
+            <Flex
+              fontSize="large"
+              flexDir={{ base: "row", lg: "column" }}
+              rowGap={6}
+              justifyContent={{ base: "space-around", lg: "center" }}
+              alignItems="center"
+              w={"100%"}
+            >
               <Link
                 as={NextLink}
                 href="/dashboard"
@@ -68,7 +89,12 @@ export default function LeftColumn() {
             </Flex>
           </Flex>
         </Flex>
-        <Flex flexDirection="column" alignItems="center" mb="10">
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          mb={"10"}
+          mt={{ base: "10" }}
+        >
           <Avatar name="Zildjian Vito" src="avatar.png" />
           <Text textAlign="center" mt="2">
             Zildjian Vito

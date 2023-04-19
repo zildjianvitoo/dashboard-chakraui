@@ -38,8 +38,8 @@ import RightColumn from "@/components/RightColumn";
 export default function Dashboard() {
   return (
     <Flex
-      h="100vh"
-      flexDir={{ base: "column", lg: "row" }}
+      h={["100%", "100%", "100%", "100vh"]}
+      flexDir={["column", "column", "column", "row"]}
       overflow="hidden"
       maxW="2000px"
     >

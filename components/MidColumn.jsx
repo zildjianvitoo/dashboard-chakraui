@@ -14,7 +14,13 @@ import {
 import { FiCalendar } from "react-icons/fi";
 export default function MidColumn() {
   return (
-    <Flex flexDir="column" w="60%" minH="100vh" p="3%" overflow="auto">
+    <Flex
+      flexDir="column"
+      w={{ base: "100%", lg: "60%" }}
+      minH="100vh"
+      p="3%"
+      overflow="auto"
+    >
       <Heading letterSpacing="tight">
         <Text fontWeight="normal" display="inline-flex" mr="2">
           Welcome back,
