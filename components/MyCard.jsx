@@ -11,7 +11,7 @@ export default function MyCard({ bgGradient, balance, cardNumber, validThru }) {
       borderRadius="3xl"
       color="white"
       alignSelf="center"
-      minW={{ base: "400px", lg: "full" }}
+      minW={{ base: "350px", lg: "100%" }}
     >
       <Flex justifyContent="space-between" align="center">
         <Text color="gray.300">Current Balance</Text>

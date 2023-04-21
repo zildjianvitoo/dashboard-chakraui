@@ -16,7 +16,6 @@ import {
   InputLeftElement,
   FormLabel,
 } from "@chakra-ui/react";
-import { color } from "framer-motion";
 import {
   FiPlus,
   FiCreditCard,
@@ -24,7 +23,6 @@ import {
   FiBell,
   FiDollarSign,
 } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
 import MyCard from "./MyCard";
 
 export default function RightColumn() {
